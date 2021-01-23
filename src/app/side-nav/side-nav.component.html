@@ -1,0 +1,13 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()" style="color: white;">&times;</a>
+    <a href="#"  routerLink="/login">Login</a>
+    <a href="#" routerLink="/uuid">UUID Generator</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div id="main">
+    <div class="pt-5" style="font-size:30px;cursor:pointer; position: fixed; z-index: 10;" (click)="toggleNav()">&#9776;</div>
+  </div>
+
+  <router-outlet></router-outlet>

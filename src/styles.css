@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+.pull-right {
+  text-align: right !important;
+  margin-left: auto !important;
+}
+
+.pull-left {
+  text-align: left !important;
+  margin-right: auto !important;
+}
+
+.pull-center {
+  text-align: center ! important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.v-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.outline-black {
+  border: 2px solid black;
+}
+
+.outline-red {
+  border: 2px solid red;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.img-sm {
+  height: 100px;
+  width: 100px;
+}
+
+.img-md {
+  height: 200px;
+  width: 200px;
+}
+
+.img-lg {
+  height: 400px;
+  width: 400px;
+
+}
+
+.img-full {
+  height: 100%;
+  width: 100%;
+}
+
+.img-fit {
+  object-fit: contain !important;
+}
+
+
+.scale-10 {
+  width: 10% !important;
+}
+
+.scale-20 {
+  width: 20% !important;
+}
+
+.scale-30 {
+  width: 30% !important;
+}
+
+.scale-40 {
+  width: 40% !important;
+}
+
+.scale-50 {
+  width: 50% !important;
+}
+
+.scale-60 {
+  width: 60% !important;
+}
+
+.scale-70 {
+  width: 70% !important;
+}
+
+.scale-80 {
+  width: 80% !important;
+}
+
+.scale-90 {
+  width: 90% !important;
+}
+
+.scale-100 {
+  width: 100% !important;
+}
+
+.btn-pill {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px !important;
+}
+
+.btn-icon {
+  border: none;
+}
+
+.icon-md {
+  height: 200px;
+  width: 200px;
+}
+
+.icon-lg {
+  height: 400px;
+  width: 400px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

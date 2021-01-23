@@ -1,0 +1,30 @@
+<div [ngStyle]="{'background-color': backdropColor }">
+    <div class="row p-3">
+        <div class="col pull-center">
+            <h4> CONTACT</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 border-right pull-center">
+            <p><b>Address</b></p>
+            <p>{{contact.street}}</p>
+            <p>{{contact.city}} , {{contact.state}}</p>
+            <p>{{contact.zip}}</p>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-6">
+            <form class="scale-80">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Short message"></textarea>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary scale-20">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>

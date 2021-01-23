@@ -1,0 +1,15 @@
+<div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col pull-center p-3">
+            <h3>{{info.title}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-if="info.image" class="col-lg-4 col-md-4 col-sm-12 pull-center">
+            <img [src]="info.imageUrl" class="img-md" [ngClass]="info.rounded ? 'img-round': 'default'" alt="Italian Trulli">
+        </div>
+        <div class="col">
+            <p>{{info.description}}</p>
+        </div>
+    </div>
+</div>

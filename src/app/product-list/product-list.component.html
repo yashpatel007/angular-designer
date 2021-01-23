@@ -1,0 +1,13 @@
+<ul class="list-group list-group-flush">
+    <li *ngFor="let product of products" class="list-group-item">
+        <div class="row">
+            <div class="col-lg-4">
+               <a [href]="product.link"> <img [src]="product.imageUrl" class="img-fit scale-100" alt="name"> </a>
+            </div>
+            <div class="col-lg-8">
+                <b>{{product.title}}</b>
+                <p>{{product.description}}</p>
+            </div>
+        </div>
+    </li>
+  </ul>

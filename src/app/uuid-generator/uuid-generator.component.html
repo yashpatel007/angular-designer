@@ -1,0 +1,89 @@
+<div class="container-fluid" style="background-color: #26547C; height: 45%;">
+    <div class="row">
+        <div class="col pull-center">
+            <h1 style="color: #FCFCFC; margin-top: 7%; font-size: 52px; font-weight: bold;">Online UUID Generator</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col pull-center mt-5">
+            <p style="color: #EF476F; font-size: 16px;">Your Version4 UUID</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col pull-center">
+            <span style="display: inline;">
+                <p style="color: #FCFCFC; font-size: 42px; display: inline-block;" class="mr-3">{{uuidValue}}</p>
+                <button class="p-2 btn btn-light mb-3" style="opacity: 70%; color:grey; border-radius: 10px;" (click)="copyUuid()"> <i class='far fa-clipboard'></i> {{ copied ? 'Copied': 'Copy' }}</button>
+                <p style="color : #FCFCFC"><a style="color:#EF476F" href="javascript: window.location.reload();" > <u>Refresh</u> </a> to generate new UUID </p>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <div class="card-header">
+                  Version 1 UUID Generator
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-dark">Generate a Version1 UUID</button>
+                    <hr>
+                    <p class="card-text" style="font-size: 24px; font-weight: bold;">Bulk Version 1 UUID Generation</p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="button-addon2">How Many ?</span>
+                        <input #v1inputCount type="number" class="form-control" placeholder="Max 100" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" (click)="generateMultiplev1UUID(v1inputCount.value)" type="button" id="button-addon2">Generate</button>
+                      </div>
+                      <div>
+                          <p *ngFor="let uuid of v1UUIDs">{{uuid}}</p>
+                      </div>
+                  
+                </div>
+                <div class="card-footer text-muted">
+                  <p>
+                    What is a Version 1 UUID?
+                  </p>  
+                  <p>
+                      A Version 1 UUID is a universally unique identifier that is generated using a timestamp and the MAC address of the computer on which it was generated.
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                    Version 4 UUID Generator
+                    </div>
+                    <div class="card-body">
+                        <button (click)="generateUUID();" class="btn btn-dark">Generate a Version4 UUID</button>
+                        <hr>
+                      <p class="card-text" style="font-size: 24px; font-weight: bold;">Bulk Version 4 UUID Generation</p>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="button-addon2">How Many ?</span>
+                        <input #v4inputCount type="number" class="form-control" placeholder="Max 100" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" (click)="generateMultiplev4UUID(v4inputCount.value)" type="button" id="button-addon2">Generate</button>
+                      </div>
+                      <div>
+                          <p *ngFor="let uuid of v4UUIDs">{{uuid}}</p>
+                      </div>
+                      
+                    </div>
+                    <div class="card-footer text-muted">
+                      <p>What is a version 4 UUID?</p>
+                       <p> A Version 4 UUID is a universally unique identifier that is generated using random numbers. The Version 4 UUIDs produced by this site were generated using a secure random number generator.</p>
+                    </div>
+                  </div>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="row p-5">
+
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
